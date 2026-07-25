@@ -109,11 +109,86 @@ body>footer::after{
 /*footer*/
 footer {
 	color: black;
-	clear:left;
+	clear:both;
 	background-color:hsla(323,100%,89%,1.00);
 	}
 footer>p::after{
 	clear:both;
 	content:"";
+	margin-top: 40px;
+}
+
+
+
+/*About Us*/
+section#About{
+	clear:left;
+	float:left;
+	overflow:auto;
+	width:50%;
+}
+section#About::after{
+	clear:both;
+	content:"";
 	display:table;
+	margin: 1% 1% 10% 10%;
+}
+section#storefront{
+	clear:right;
+	float:right;
+	overflow:auto;
+	width:40%;
+}
+section#Contact{
+	clear:both;
+	float:left;
+	overflow:auto;
+	width:50%;
+}
+section#Contact::after{
+	clear:both;
+	content:"";
+	display:table;
+	margin: 1% 1% 10% 10%;
+}
+
+/*Gallery*/
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+	clear:both;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+/*input*/
+input {
+  width: 25%;
+	margin-left: 2%;
+}
+textarea{
+	width:50%;
+	overflow:scroll;
+	margin-left: 2%;
 }
